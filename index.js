@@ -5,12 +5,8 @@ let randomNumber2 = Math.ceil(Math.random() * 6);
 let randomImage1 = "images/dice" + randomNumber1 + ".png"
 let randomImage2 = "images/dice" + randomNumber2 + ".png"
 
-let image1 = document.querySelectorAll("img")[0]
-  image1.setAttribute("src", randomImage1);
-
-let image2 = document.querySelectorAll("img")[1]
-  image2.setAttribute("src", randomImage2);
-
+let image1 = document.querySelectorAll("img")[0].setAttribute("src", randomImage1);
+let image2 = document.querySelectorAll("img")[1].setAttribute("src", randomImage2);
 
 if(randomNumber1 > randomNumber2){
   document.querySelector("h1").innerHTML = "🚩 Player 1 wins!";
